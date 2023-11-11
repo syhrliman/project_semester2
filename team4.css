@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(img/Pengertian-Guest-House-768x417.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 10;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.wrapper-mem {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    height: 100vh;
+    width: 90%;
+}
+
+.wrapper-mem h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 800;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.478);
+    opacity: .9;
+}
+
+.member-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    background-color: #372504;
+    border-radius: 5px;
+}
+
+.card-member img {
+    height: 350px;
+    width: 200px;
+}
+
+.card-member p {
+    padding: 10px;
+    font-size: 18px;
+    height: 50px;
+}
+
+/* START DISPLAY MOBILE */
+@media screen and (max-width: 999px) {
+    .member-gallery {
+        flex-direction: column;
+    }
+
+    .wrapper-mem {
+        height: auto;
+    }
+
+    .card-member {
+        margin-top: 25px;
+    }
+}
+/* END DISPLAY MOBILE */

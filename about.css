@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(img/Pengertian-Guest-House-768x417.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5h0px;
+}
+
+/* START ABOUT */
+.wrapper-about {
+    margin-top: 140px;
+    margin-bottom: 80px;
+    padding: 45px;
+    height: auto;
+    width: 78%;
+    text-align: justify;
+    color: #fefdfb;
+    background-color: rgba(0, 0, 0, 0.478);
+    border-radius: 10px;
+}
+
+.text-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 20px;
+    color: #fbf9f4;
+}
+.text-about h2 {
+    font-size: 35px;
+}
+
+.exe {
+    color: #ffffff;
+    margin-top: -30px;
+}
+
+.exe h2 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: -30px;
+}
+
+.text-about p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 18px;
+    font-size: 18px;
+}
+
+table {
+    width: 750px;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 18px;
+}
+
+.favorite ul {
+    list-style: square;
+}
+
+.favorite ul li {
+    margin: 7px 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.favorite {
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 1000px;
+}
+
+/* END ABOUT */
+
+/* START DISPLAY MOBILE*/
+/*Dibawah about semua*/
+@media screen and (max-width: 800px) {
+
+    .wrapper-about{
+        width: 75%;
+        margin-bottom: 0;
+        margin-top: 70px;
+    }
+    .gw{
+        font-size: 10px;
+    }
+    .favorite{
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    /*About table*/
+    table{
+        width: 110%;
+        padding-right: 30px;
+        
+    }
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr{
+        border: 1px solid rgb(39, 39, 72);
+    }
+    td{
+        border: none;
+        border-bottom: 1px solid rgba(35, 31, 31, 0.353);
+        position: relative;
+        padding-left: 60%;
+    }
+    td:before{
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-column);
+        font-weight: 700;
+    }
+    .dimen{
+        font-size: 15px;
+    }
+}
+/* END DISPLAY MOBILE */

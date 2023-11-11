@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(img/Pengertian-Guest-House-768x417.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 10;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* START PPOLICY */
+.wrapper-policy {
+    margin-top: 140px;
+    margin-bottom: 80px;
+    padding: 45px;
+    height: auto;
+    color: #fefdfb;
+    background-color: rgba(0, 0, 0, 0.478);
+    border-radius: 10px;
+    width: 78%;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+.text-rules {
+    padding: 20px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-rules h2 {
+    margin-left: 0px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #c6d2c7;
+}
+
+.text-rules ol {
+    margin-left: 10px;
+}
+
+.text-rules li {
+    padding-top: 10px;
+}
+
+.text-disclaimer {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.text-disclaimer h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #c6d2c7;
+
+}
+
+.text-agreement {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.text-agreement h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #c6d2c7;
+}
+
+.text-agreement ul {
+    margin-left: 15px;
+}
+
+.text-agreement li {
+    padding-top: 10px;
+}
+
+/* END PPOLICY */
+
+/* START DISPLAY MOBILE*/
+@media screen and (max-width: 720px) {
+    
+    .wrapper-policy {
+        margin-top: 70px;
+        margin-bottom: 0px;
+        padding: 40px;
+        height: auto;
+        color: #fefdfb;
+        background-color: rgba(0, 0, 0, 0.478);
+        border-radius: 10px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .text-rules {
+        padding: 0px;
+    }
+
+    .text-rules ol {
+        margin-left: 0;
+    }
+
+    .text-disclaimer {
+        padding: 5px;
+        padding: 0px;
+    }
+
+    .text-agreement {
+        padding: 0px;
+    }
+}
+
+/* END DISPLAY MOBILE */

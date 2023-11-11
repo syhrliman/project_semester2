@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: url(img/Pengertian-Guest-House-768x417.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* START RESERVATION */
+.wrapper-reservation {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 45px;
+    height: auto;
+    width: 78%;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    color: #fefdfb;
+    background-color: rgba(0, 0, 0, 0.478);
+    border-radius: 10px;
+}
+
+.text-reservation {
+    margin-top: 10px;
+}
+
+.text-reservation h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.text-reservation p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.text-reservation table {
+    margin-top: 20px;
+}
+
+.text-reservation table tr td {
+    padding: 5px;
+}
+
+.btn-reservation {
+    background-color: #372504;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+input,
+textarea {
+    background: rgba(0, 0, 0, 0.381);
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+}
+
+select {
+    background: rgba(0, 0, 0, 0.381);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+}
+
+table {
+    padding-left: 70px;
+}
+
+.btn-reservation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-order {
+    background-color: #f4f1ecaa;
+    color: #372504;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* END RESERVATION */
+
+/* START DISPLAY MOBILE*/
+@media screen and (max-width: 720px) {
+
+    .wrapper-reservation {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding: 0px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        color: #fefdfb;
+        background-color: rgba(0, 0, 0, 0.478);
+        border-radius: 10px;
+    }
+
+    .text-reservation p {
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .btn-order {
+        font-size: 15px;
+    }
+
+    input,
+    textarea {
+        width: auto;
+    }
+
+    table {
+        padding-left: 20px;
+    }
+
+}
+
+/* END DISPLAY MOBILE */
